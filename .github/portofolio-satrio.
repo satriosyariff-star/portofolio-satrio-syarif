@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Satrio Syarif Fadilah | SMKN 16 Samarinda</title>
+    <style>
+        /* CSS RESET & VARIABLES (Warna Lembut / Eye-Friendly) */
+        :root {
+            --bg-color: #0f172a;        /* Dark Slate Soft */
+            --card-bg: #1e293b;       /* Muted Card Background */
+            --accent-blue: #7dd3fc;    /* Soft Sky Blue */
+            --accent-green: #86efac;   /* Soft Pastel Green */
+            --text-main: #f1f5f9;      /* Off-White (Tidak Silau) */
+            --text-muted: #94a3b8;     /* Soft Gray */
+            --border-color: #334155;  /* Subtle Border */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* CONTAINER UTAMA */
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* HEADER & HERO SECTION */
+        header {
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 25px;
+            margin-bottom: 30px;
+        }
+
+        .avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-green));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-size: 40px;
+            color: #0f172a;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(125, 211, 252, 0.2);
+        }
+
+        h1 {
+            color: var(--accent-blue);
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        .status-badge {
+            display: inline-block;
+            background: rgba(134, 239, 172, 0.1);
+            color: var(--accent-green);
+            border: 1px solid var(--accent-green);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-top: 12px;
+            font-weight: 600;
+        }
+
+        /* GRID INFORMASI */
+        .grid {
+            display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: rgba(15, 23, 42, 0.5);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .card h2 {
+            color: var(--accent-blue);
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            color: var(--text-muted);
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        ul li span {
+            color: var(--text-main);
+            font-weight: 500;
+        }
+
+        /* SKILLS / KEAHLIAN */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .skill-tag {
+            background: #334155;
+            color: var(--accent-blue);
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+        }
+
+        /* RESPONSIVE UNTUK HP */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- HEADER PROFIL -->
+        <header>
+            <div class="avatar">😂</div>
+            <h1>Satrio syarif fadilah</h1>
+            <p class="subtitle">Siswa SMK Negeri 16 Samarinda</p>
+            <div class="status-badge">🟢 Cloud Server Online</div>
+        </header>
+
+        <!-- KONTEN UTAMA -->
+        <div class="grid">
+            <!-- BIODATA DIRI -->
+            <div class="card">
+                <h2>👤 Profil Saya</h2>
+                <ul>
+                    <li>NISN: <span>3105383026</span></li>
+                    <li>Kelas: <span>X TJKT</span></li>
+                    <li>Konsentrasi: <span>Teknik Jaringan & Telekomunikasi</span></li>
+                    <li>Cita-cita: <span>Cloud Engineer</span></li>
+                </ul>
+            </div>
+
+            <!-- INFORMASI SEKOLAH -->
+            <div class="card">
+                <h2>🏫 Sekolah</h2>
+                <ul>
+                    <li>Instansi: <span>SMK Negeri 16 Samarinda</span></li>
+                    <li>Jurusan: <span>TJKT</span></li>
+                    <li>Kota: <span>Samarinda, Kaltim</span></li>
+                    <li>Status Web: <span>Cloud Hosted (Vercel)</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SKILLS / TANTANGAN CLOUD -->
+        <div class="card" style="margin-bottom: 30px;">
+            <h2>🚀 Kompetensi & Materi Pembelajaran</h2>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 10px;">
+                Materi dasar Teknik Jaringan Komputer dan Telekomunikasi yang dipelajari:
+            </p>
+            <div class="skills-list">
+                <span class="skill-tag">Cloud Computing Dasar</span>
+                <span class="skill-tag">HTML5 & CSS3</span>
+                <span class="skill-tag">Web Deployment</span>
+                <span class="skill-tag">Jaringan Komputer</span>
+                <span class="skill-tag">Vercel PaaS</span>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2026 Portofolio TJKT — SMK Negeri 16 Samarinda</p>
+        </footer>
+    </div>
+
+</body>
+</html>
